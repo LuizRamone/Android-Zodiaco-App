@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stars"
+    tools:context="com.example.luiz.signoszodiac.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <ImageView
+        android:id="@+id/rodaId"
+        android:layout_width="0dp"
+        android:layout_height="545dp"
+        app:srcCompat="@drawable/signosnovo"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/cavaleirosimage"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoAldeId"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" />
+
+    <ImageView
+        android:id="@+id/imagemAndroId"
+        android:layout_width="145dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/andro"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/rodaId"
+        android:layout_marginStart="31dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/botaoEscorpiaoId"
+        android:layout_marginLeft="31dp" />
+
+    <Button
+        android:id="@+id/buttonMuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/botaoAldeId"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoPeixesId"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/botaoAldeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMuId"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/botaoGeminiId"
+        android:layout_marginLeft="35dp" />
+
+    <Button
+        android:id="@+id/botaoGeminiId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="@+id/botaoCancerId"
+        app:layout_constraintTop_toBottomOf="@+id/botaoAldeId"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/botaoCancerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoLeaoId"
+        app:layout_constraintRight_toRightOf="@+id/botaoLeaoId"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="@+id/botaoLeaoId" />
+
+    <Button
+        android:id="@+id/botaoLeaoId"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoVirgemId"
+        android:layout_marginTop="47dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botaoCapricornioId"
+        android:layout_marginLeft="33dp" />
+
+    <Button
+        android:id="@+id/botaoVirgemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/botaoLibraId"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/botaoLeaoId"
+        android:layout_marginLeft="27dp" />
+
+    <Button
+        android:id="@+id/botaoLibraId"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/botaoVirgemId"
+        app:layout_constraintBottom_toTopOf="@+id/imagemAndroId" />
+
+    <Button
+        android:id="@+id/botaoEscorpiaoId"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="31dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/botaoSargitarioId"
+        app:layout_constraintBaseline_toBaselineOf="@+id/botaoLibraId"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="31dp" />
+
+    <Button
+        android:id="@+id/botaoSargitarioId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintRight_toRightOf="@+id/botaoCapricornioId"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCapricornioId"
+        android:layout_marginRight="21dp" />
+
+    <Button
+        android:id="@+id/botaoCapricornioId"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoEscorpiaoId"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/botaoAquarioId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSargitarioId"
+        app:layout_constraintRight_toRightOf="@+id/botaoSargitarioId"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintLeft_toLeftOf="@+id/botaoSargitarioId" />
+
+    <Button
+        android:id="@+id/botaoPeixesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="73dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoAquarioId"
+        app:layout_constraintRight_toRightOf="@+id/rodaId"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonMuId"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp" />
+
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="9dp"
+        android:layout_height="7dp"
+        android:layout_marginEnd="21dp"
+        android:background="#13000000"
+        android:textAlignment="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoEscorpiaoId"
+        app:layout_constraintRight_toRightOf="@+id/botaoCapricornioId"
+        android:layout_marginTop="53dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintTop_toTopOf="@+id/botaoSargitarioId"
+        app:layout_constraintLeft_toRightOf="@+id/botaoEscorpiaoId"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="21dp" />
+
+    <Button
+        android:id="@+id/botaologoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonMuId"
+        app:layout_constraintTop_toTopOf="@+id/rodaId"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
